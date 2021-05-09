@@ -49,6 +49,8 @@ userRouter.post("/signin", expressAsyncHandler(async(req, res) => {
             res.send({
                 _id: user._id,
                 userName: user.userName,
+                phone: user.phone,
+                
                 isAdmin: user.isAdmin,
                 token: generateToken(user),
             });

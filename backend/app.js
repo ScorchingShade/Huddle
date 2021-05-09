@@ -3,6 +3,7 @@ import cors from 'cors'
 import mongoose from 'mongoose'
 import dotenv from 'dotenv'
 import userRouter from './routes/userRoute.js'
+import topicRouter from './routes/topicRouter.js'
 
 
 //Initialise the app
@@ -31,6 +32,7 @@ connection.once('open', () => {
 
 //Routes
 app.use('/api/v1/users', userRouter)
+app.use('/api/v1/topics', topicRouter)
 
 //listen to port
 app.listen(PORT, () => {
