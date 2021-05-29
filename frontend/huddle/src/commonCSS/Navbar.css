@@ -1,0 +1,34 @@
+.show {
+    display: block;
+    transition: opacity 1s ease-out;
+    opacity: 1;
+}
+
+.noshow {
+    display: none;
+    transition: opacity 1s ease-out;
+    opacity: 0;
+}
+
+.logoutbtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 4px;
+    background: #02de11;
+    padding: 10px 22px;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    /* Second Nav */
+    /* margin-left: 24px;*/
+}
+
+button>.logoutbtn :hover {
+    transition: all 0.2s ease-in-out;
+    background: #fff;
+    color: #010606;
+}
