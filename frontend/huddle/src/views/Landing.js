@@ -42,12 +42,27 @@ function Landing(props) {
   }
 
   let textStyleCaption={
+    fontSize: "1.8rem",
+    fontWeight:600,
+    color: "white",
+    textShadow: "2px 2px 4px black"
+  }
+  let HuddleGroup={
     fontSize: "1.4rem",
     fontWeight:600,
     color: "white",
     textShadow: "2px 2px 4px black"
   }
 
+  let huddleStyleCaption={
+    fontSize: "1.4rem",
+    fontWeight:600,
+    color: "white",
+    background: "green",
+    width: "50%",
+    padding:"0.8em",
+    borderRadius:"12px"
+  }
 
 
 
@@ -56,14 +71,21 @@ function Landing(props) {
       <div style={bgStyle}>
           <div style={overLay}>
               <div className="jumbotronText">
-            <h1 style={textStyle} >Welcome to your Huddles!</h1>
+                <div style={HuddleGroup}>
+
+                </div>
+            <h1 style={textStyle} >Welcome to Huddles!</h1>
             <p style={textStyleCaption}>
               Connect with your fellow alumni to share knowledge, learn & grow in 3 steps!
             </p>
+            <p style={huddleStyleCaption}>
+              Ask Questions | Share resources | Connect for opportunities
+            </p>
             </div>
+           
             <br></br>
           <div className="btnGroup">
-              <button className="btnStyle" onClick={() => nextPath('/signup') }>Join your Huddle!</button><br></br>
+              <button className="btnStyle" onClick={() => nextPath('/login') }>Join your Huddle!</button><br></br>
               <button className="btnStyle" onClick={() => nextPath('/login') }>Already a member?</button><br></br>
           </div>
           </div>

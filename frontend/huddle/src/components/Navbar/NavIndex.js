@@ -42,7 +42,7 @@ function NavIndex(props) {
         {console.log("this is state of vis " + vis)}
         <Nav>
           <NavLink to="/">
-            <h1>Huddle</h1>
+            <h1>Huddles</h1>
           </NavLink>
           <Bars
             onClick={() => {
@@ -75,8 +75,8 @@ function NavIndex(props) {
       <>
         {console.log("this is state of vis " + vis)}
         <Nav>
-          <NavLink to="/">
-            <h1>Oxicov</h1>
+          <NavLink to="/dashboard">
+            <h1>Huddles</h1>
           </NavLink>
           <Bars
             onClick={() => {
@@ -85,11 +85,15 @@ function NavIndex(props) {
           />
 
           <NavMenu>
-            <NavLink to="/home" activeStyle>
+            {/* <NavLink to="/home" activeStyle>
               Home
-            </NavLink>
-            <NavLink to="/authHome" activeStyle>
+            </NavLink> */}
+            <NavLink to="/dashboard" activeStyle>
               Dashboard
+            </NavLink>
+
+            <NavLink to="/step2" activeStyle>
+              Step2
             </NavLink>
 
             <NavLink to="/about" activeStyle>

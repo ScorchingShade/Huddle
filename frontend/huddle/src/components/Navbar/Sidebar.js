@@ -51,9 +51,9 @@ function Sidebar(props) {
             {console.log("in SideBar.js "+ showClause)}
                <Nav > 
                 <NavMenu>
-                    <NavLink to="/home" activeStyle>Home</NavLink>
-                    <NavLink to="/authHome" activeStyle>Dashboard</NavLink>
-                    
+                    {/* <NavLink to="/home" activeStyle>Home</NavLink> */}
+                    <NavLink to="/dashboard" activeStyle>Dashboard</NavLink>
+                    <NavLink to="/step2" activeStyle>Step2</NavLink>
                     <NavLink to="/about" activeStyle>About</NavLink>
                     {/* <NavBtnLink to="/register">Signup</NavBtnLink> */}
     

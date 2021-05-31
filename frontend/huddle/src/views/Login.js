@@ -7,7 +7,7 @@ function Login(props) {
 
     let bgStyle = {
         backgroundImage: `url(${image})`,
-        height: "100vh",
+        height: "90vh",
         backgroundPosition: "center",
         backgroundSize: "cover",
     
@@ -56,10 +56,10 @@ function Login(props) {
     return (
         <div>
         <div style={bgStyle}>
-            <div style={overLay}  >
-            <div style={{marginTop:"-10%"}}>
+          
+            <div style={{marginTop:"2%"}}>
             <AccountBox />
-            </div>
+         
            
             </div>
           </div>

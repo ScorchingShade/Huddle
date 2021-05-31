@@ -144,19 +144,19 @@ function AccountBox(props) {
             />
             {active === "signup" && (
               <HeaderContainer>
-                <HeaderText>Welcome </HeaderText>
-                <HeaderText>to Huddles!</HeaderText>
-                <SmallText>
-                  Please enter the details to join your huddle!
+                <HeaderText style={{color:"black"}}>Step 1 of 3</HeaderText>
+                <HeaderText></HeaderText>
+                <SmallText style={{color:"black"}}>
+                  Identify yourself
                 </SmallText>
               </HeaderContainer>
             )}
 
             {active === "signin" && (
               <HeaderContainer>
-                <HeaderText>Welcome</HeaderText>
-                <HeaderText>to Huddles</HeaderText>
-                <SmallText>Ready to join your huddle back?</SmallText>
+                <HeaderText style={{color:"black"}}>Welcome</HeaderText>
+                <HeaderText style={{color:"black"}}>to Huddles</HeaderText>
+                <SmallText style={{color:"black"}}>Ready to join back your huddles?</SmallText>
               </HeaderContainer>
             )}
           </TopContainer>

@@ -43,7 +43,7 @@ userRouter.post(
 
 
 userRouter.post("/signin", expressAsyncHandler(async(req, res) => {
-    const user = await User.findOne({ userName: req.body.userName });
+    const user = await User.findOne({ phone: req.body.phone });
     if (user) {
         if (bcrypt.compareSync(req.body.pass, user.pass)) {
             res.send({
